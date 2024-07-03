@@ -8,6 +8,7 @@ export class DiaristaController {
         const diaristas = [
             { nome: 'Paulo', },
             { nome: 'Bruna', },
-        ]
+        ];
+        return { diarista: diaristas[id] };
     }
 }
