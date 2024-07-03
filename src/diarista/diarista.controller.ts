@@ -1,4 +1,9 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
 @Controller('diarista')
-export class DiaristaController {}
+export class DiaristaController {
+    @Get()
+    root() {
+        return 'Example of route GET /diarista:!';
+    }
+}
