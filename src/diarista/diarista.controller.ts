@@ -1,10 +1,13 @@
-import { Controller, Get, Render } from '@nestjs/common';
+import { Controller, Get, Param, Render } from '@nestjs/common';
 
 @Controller('diarista')
 export class DiaristaController {
-    @Get()
+    @Get(':id')
     @Render('home')
-    root() {
-        // return 'Example of route GET /diarista:!';
+    root(@Param('id') id: number) {
+        const diaristas = [
+            { nome: 'Paulo', },
+            { nome: 'Bruna', },
+        ]
     }
 }
