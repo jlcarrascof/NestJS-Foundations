@@ -1,0 +1,12 @@
+{
+  "name": "nestjs-foundations",
+  "version": "1.0.0",
+  "description": "NestJS is a back-end framework that assists in developing efficient, scalable, and reliable applications on top of Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
