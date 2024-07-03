@@ -6,8 +6,8 @@ export class DiaristaController {
     @Render('home')
     root(@Param('id') id: number) {
         const diaristas = [
-            { nome: 'Paulo', },
-            { nome: 'Bruna', },
+            { name: 'Paulo', },
+            { name: 'Bruna', },
         ];
         return { diarista: diaristas[id] };
     }
