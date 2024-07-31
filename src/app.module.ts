@@ -1,8 +1,19 @@
 import { Module } from '@nestjs/common';
 import { DiaristaModule } from './diarista/diarista.module';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [DiaristaModule],
+  imports: [DiaristaModule,
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: '',
+      database: 'curso_nest',
+      entities: [],
+      synchronize: true,
+  })],
   controllers: [],
   providers: []
 })
